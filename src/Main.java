@@ -15,9 +15,9 @@ public class Main {
         }
 
 
-       /* for (String linea : Files.readAllLines(Paths.get(".\\resultados.csv"))){
+       /* for (String linea : Files.readAllLines(Paths.get(".\\resultados.csv"))){   //datos sin tratar
             System.out.println(linea);
-        }*/
 
+        */
     }
 }
