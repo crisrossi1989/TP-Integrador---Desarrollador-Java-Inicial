@@ -7,15 +7,17 @@ import java.util.Properties;
 public class Main {
     public static void main(String[] args) throws IOException {
         String[] equipo;
-        String archivoPronostico = "";
-        String archivoResultado = "";
+        String archivoPronostico;
+        String archivoResultado;
         int posPrimerComaPron;
         int posPimerComaResul;
-        Partido partido1 =new Partido();
-        Equipo equipoL=new Equipo();
-        Equipo equipoV=new Equipo();
-        Pronostico prono1;
+        Equipo equipoL;
+        Equipo equipoV;
+        Pronostico prono=new Pronostico();
         int apuesta;
+        Ronda ronda=new Ronda(1,null);
+        Partido partido[]=new Partido[2];
+        int puntosTotales=0;
 
         List<String> allLines = Files.readAllLines(Paths.get(".\\resultados.csv"));
         for (int j = 1; j < allLines.size(); j++) {
@@ -27,9 +29,10 @@ public class Main {
 
             equipoL = new Equipo(equipo[0]);
             equipoV = new Equipo(equipo[3]);
-            partido1 = new Partido(equipoL,equipoV,goll,golv);
-
+            partido[j-1] = new Partido(equipoL,equipoV,goll,golv);
         }
+
+        ronda.setPartidos(partido);
 
         List<String> readAllLines = Files.readAllLines(Paths.get(".\\pronostico.csv"));
         for (int i = 1; i < readAllLines.size(); i++) {
@@ -44,7 +47,10 @@ public class Main {
                     apuesta=3;
                 }
             }
-           prono1 =new Pronostico(partido1,apuesta);
+            prono.setApuesta(apuesta);
+            prono.setPartidoApostado(partido[i-1]);
+            puntosTotales = ronda.puntosTotales(prono);
         }
+        System.out.println(puntosTotales);
     }
 }

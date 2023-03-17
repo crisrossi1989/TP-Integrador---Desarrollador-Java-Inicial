@@ -3,7 +3,7 @@ int rdo;
     //Metodos
     public void calcularResultado(int golesEL,int golesEV){
         if(golesEL==golesEV){
-            this.rdo=0;
+            this.rdo=2;
         }else{
             if (golesEL>golesEV){
                 this.rdo=1;
