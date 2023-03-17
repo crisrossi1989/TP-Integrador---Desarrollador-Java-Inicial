@@ -1,15 +1,19 @@
 public class Resultado{
-
+int rdo;
     //Metodos
-    public String calcularResultado(int golesEL,int golesEV){
+    public void calcularResultado(int golesEL,int golesEV){
         if(golesEL==golesEV){
-            return"Empate";
+            this.rdo=0;
         }else{
             if (golesEL>golesEV){
-                return "Gana el local";
+                this.rdo=1;
             }else{
-                return "Gana el visitante";
+                this.rdo=3;
             }
         }
+    }
+
+    public int getRdo() {
+        return rdo;
     }
 }

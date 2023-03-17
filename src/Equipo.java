@@ -4,6 +4,9 @@ public class Equipo {
 
     //Constructor
 
+    public Equipo() {
+    }
+
     public Equipo(String nombre) {
         this.nombre = nombre;
     }

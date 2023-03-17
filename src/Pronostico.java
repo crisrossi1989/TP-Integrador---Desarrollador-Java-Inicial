@@ -1,12 +1,12 @@
 public class Pronostico {
     //Atributos
     private Partido partidoApostado;
-    private String apuesta;
+    private int apuesta;
     private int puntos;
 
     //Constructor
 
-    public Pronostico(Partido partidoApostado, Equipo equipoElegido, String apuesta) {
+    public Pronostico(Partido partidoApostado, int apuesta) {
         this.partidoApostado = partidoApostado;
         this.apuesta = apuesta;
     }
@@ -15,6 +15,10 @@ public class Pronostico {
     //Metodos
 
     public void calcularPuntos(){
+
+        if(partidoApostado.getResultado()==apuesta){
+            puntos++;
+        }
 
     }
 

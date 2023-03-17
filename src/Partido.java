@@ -4,21 +4,27 @@ public class Partido {
     private Equipo equipoVisitante;
     private int golesEL;
     private int golesEV;
-    private String resultado;
+    private int resultado;
 
     //Constructor
+
+
+    public Partido() {
+    }
 
     public Partido(Equipo equipoLocal, Equipo equipoVisitante, int golesEL, int golesEV) {
         this.equipoLocal = equipoLocal;
         this.equipoVisitante = equipoVisitante;
         this.golesEL = golesEL;
         this.golesEV = golesEV;
+        Resultado res=new Resultado();
+        res.calcularResultado(golesEL,golesEV);
+        this.resultado = res.getRdo();
     }
 
     //Metodos
 
-    public void setResultado() {
-        Resultado res=new Resultado();
-        this.resultado = res.calcularResultado(golesEL,golesEV);
+    public int getResultado() {
+        return resultado;
     }
 }
