@@ -1,8 +1,9 @@
 public class Ronda {
+
     //Atributos
+
     int nroRonda=1;
     Partido partidos[];
-
 
     //Constructor
 

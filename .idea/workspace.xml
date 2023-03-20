@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d38dff1c-ac98-4c86-909b-f156f1df16a1" name="Changes" comment="Segundo commit los datos de los archivos estan tratados y van a las clases, falta menos (:">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pronostico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pronostico.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Resultado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Resultado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ronda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ronda.java" afterDir="false" />
-    </list>
+    <list default="true" id="d38dff1c-ac98-4c86-909b-f156f1df16a1" name="Changes" comment="Esta andando pero falta ponerlo lindo xD" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,12 +80,20 @@
       <option name="project" value="LOCAL" />
       <updated>1679015393027</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Esta andando pero falta ponerlo lindo xD">
+      <created>1679092948678</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679092948678</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Primer commit, Clases planteadas a grandes rasgos y principio del main, viendo como tratar los datos de los archivos" />
     <MESSAGE value="Segundo commit los datos de los archivos estan tratados y van a las clases, falta menos (:" />
-    <option name="LAST_COMMIT_MESSAGE" value="Segundo commit los datos de los archivos estan tratados y van a las clases, falta menos (:" />
+    <MESSAGE value="Esta andando pero falta ponerlo lindo xD" />
+    <option name="LAST_COMMIT_MESSAGE" value="Esta andando pero falta ponerlo lindo xD" />
   </component>
 </project>

@@ -1,11 +1,12 @@
 public class Pronostico {
+
     //Atributos
+
     private Partido partidoApostado;
     private int apuesta;
     private int puntos=0;
 
     //Constructor
-
 
     public Pronostico() {
     }

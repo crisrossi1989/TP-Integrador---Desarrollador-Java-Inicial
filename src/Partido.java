@@ -1,5 +1,7 @@
 public class Partido {
+
     //Atributos
+
     private Equipo equipoLocal;
     private Equipo equipoVisitante;
     private int golesEL;
@@ -7,7 +9,6 @@ public class Partido {
     private int resultado;
 
     //Constructor
-
 
     public Partido() {
     }
