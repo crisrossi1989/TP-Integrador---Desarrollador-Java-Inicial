@@ -1,15 +1,13 @@
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.io.IOException;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) throws IOException {
         String[] equipo;
-        String archivoPronostico;
-        String archivoResultado;
-        int posPrimerComaPron;
-        int posPimerComaResul;
+        String archivoPronostico, archivoResultado;
+        int posPrimerComaPron, posPimerComaResul;
         Equipo equipoL;
         Equipo equipoV;
         Pronostico prono=new Pronostico();
