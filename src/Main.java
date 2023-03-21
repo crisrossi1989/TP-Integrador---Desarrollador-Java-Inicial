@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
         String[] equipo;
         String archivoPronostico, archivoResultado;
-        int posPrimerComaPron, posPimerComaResul, apuesta,puntosTotales=0;
+        int posPrimerComaPron, posPimerComaResul, apuesta, puntosTotales=0;
         Equipo equipoL;
         Equipo equipoV;
         Pronostico prono=new Pronostico();
