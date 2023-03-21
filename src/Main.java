@@ -7,14 +7,12 @@ public class Main {
     public static void main(String[] args) throws IOException {
         String[] equipo;
         String archivoPronostico, archivoResultado;
-        int posPrimerComaPron, posPimerComaResul;
+        int posPrimerComaPron, posPimerComaResul, apuesta,puntosTotales=0;
         Equipo equipoL;
         Equipo equipoV;
         Pronostico prono=new Pronostico();
-        int apuesta;
         Ronda ronda=new Ronda(1,null);
         Partido partido[]=new Partido[2];
-        int puntosTotales=0;
 
         List<String> allLines = Files.readAllLines(Paths.get(".\\resultados.csv"));
         for (int j = 1; j < allLines.size(); j++) {
